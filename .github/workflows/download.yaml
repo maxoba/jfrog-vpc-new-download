@@ -31,6 +31,13 @@ jobs:
         with:
           aws-region: "us-west-2"
           role-to-assume: ${{ secrets.CI_ROLE }}
+      - name: Configure Terraform credentials for JFrog
+        run: |
+          cat > ~/.terraformrc <<EOF
+          credentials "trialxphjx0.jfrog.io" {
+            token = "${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}"
+          }
+          EOF    
       - name: init
         run: terraform init
       - name: plan
