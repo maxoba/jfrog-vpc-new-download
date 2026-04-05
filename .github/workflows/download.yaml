@@ -20,7 +20,7 @@ jobs:
       - name: clone repo
         uses: actions/checkout@v4
         
-      - uses: StudisCorporation/actions-setup-terraform-credentials@v1.0.0
+      - uses: jfrog/setup-jfrog-cli@v4
         with:
           token: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}  
           hostname: ${{ secrets.JF_URL }}      
