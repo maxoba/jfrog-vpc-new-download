@@ -37,7 +37,7 @@ jobs:
           credentials "trialxphjx0.jfrog.io" {
             token = "${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}"
           }
-          EOF    
+          EOF
       - name: init
         run: terraform init
       - name: plan
