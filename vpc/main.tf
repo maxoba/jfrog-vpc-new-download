@@ -1,5 +1,5 @@
 module "vpc"{
-source = "trialxphjx0.jfrog.io/tf__cloudops/vpc/local"
+source = "trialxphjx0.jfrog.io/tf-cloudops/vpc/local"
 version = "v1.0.0"
 
 private_cidr = var.private_cidr
