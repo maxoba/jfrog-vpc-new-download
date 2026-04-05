@@ -1,5 +1,6 @@
 module "vpc" {
-  source = "./vpc"
+  source = "trialxphjx0.jfrog.io/tf__cloudops/vpc/local"
+  version = "v1.0.0"
 
   private_cidr = var.private_cidr
   availability_zones = var.availability_zones
