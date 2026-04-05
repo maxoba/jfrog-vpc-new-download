@@ -6,7 +6,7 @@ on:
   
       
 
-      
+
 jobs:
   init:
     permissions:
@@ -22,7 +22,7 @@ jobs:
         
       - uses: StudisCorporation/actions-setup-terraform-credentials@v1.0.0
         with:
-          token: ${{ secrets.ARTFACTORY_ACCESS_TOKEN }}  
+          token: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}  
           hostname: ${{ secrets.JF_URL }}      
       - name: Install terraform
         uses: hashicorp/setup-terraform@v3
